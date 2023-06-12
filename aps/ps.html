@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/aps/pyscript.css" />
+    <script defer src="/aps/pyscript.js"></script>
+  </head>
+  <body>
+    <div id = "welcome">
+      Hi, Welcome to my website
+    </div>
+
+    <div id="pyscript">
+    <py-config>
+      [splashscreen]
+      autoclose = true
+
+      [[interpreters]]
+      src = "/quamtun/pyodide_0.23.2_release/pyodide-0.23.2_tar_bz2/pyodide/pyodide.js"
+      name = "pyodide-0.21.2"
+      lang = "python"
+    </py-config>
+    <py-script>
+        for i in range(0, 7):
+          print(i)
+    </py-script>
+    </div>
+
+  </body>
+  <footer>
+    <div id = "footer">
+      This is the footer.
+    </div>
+  </footer>
+</html>
